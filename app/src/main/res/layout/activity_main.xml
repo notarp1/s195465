@@ -20,7 +20,7 @@
         app:srcCompat="@drawable/xv17fnu" />
 
     <TextView
-        android:id="@+id/textMain"
+        android:id="@+id/WebSearch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
@@ -79,7 +79,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textMain" />
 
     <WebView
-        android:id="@+id/webView1"
+        android:id="@+id/webView"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="16dp"
