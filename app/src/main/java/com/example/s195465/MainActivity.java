@@ -13,7 +13,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button bVej;
+    Button bWeb;
     Button bInd;
     TextView tStatus;
     EditText urlEdit;
@@ -23,20 +23,22 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        bVej = findViewById(R.id.buttonWeb);
+        bWeb = findViewById(R.id.buttonWeb);
         bInd = findViewById(R.id.buttonInd);
         tStatus = findViewById(R.id.textViewStatus);
         urlEdit = findViewById(R.id.inputURL);
         webView = findViewById(R.id.webView1);
-        final ImageView picture = findViewById(R.id.imageViewMain);
         webView.setVisibility(View.GONE);
 
-        bVej.setOnClickListener(new View.OnClickListener() {
+        final ImageView picture = findViewById(R.id.imageViewMain);
+
+        bWeb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 tStatus.setText("WebView");
                 picture.setImageResource(0);
                 webView.setVisibility(View.VISIBLE);
+                bInd.setText("Tilbage");
                 webView.setWebViewClient(new WebViewClient());
                 webView.loadUrl(urlEdit.getText().toString());
 
@@ -47,7 +49,9 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 webView.setVisibility(View.GONE);
                 tStatus.setText("Menu");
+                bInd.setText("Indstillinger");
                 picture.setImageResource(R.drawable.xv17fnu);
+
             }
         });
 
