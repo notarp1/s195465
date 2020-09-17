@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">s195465</string>
+    <string name="vejledning">Vejledning</string>
+    <string name="indstillinger">Indstillinger</string>
+    <string name="about">About</string>
+    <string name="g_til_website">Gå til website</string>
+    <string name="velkommen">Velkommen!</string>
+    <string name="https">https://</string>
+    <string name="forside">forside</string>
+    <string name="menu">Menu</string>
 </resources>
